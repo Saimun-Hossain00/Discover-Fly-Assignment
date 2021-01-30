@@ -28,7 +28,7 @@
     </header>
 
     <!--Booking Section-->
-    <main class="main-content container">
+    <main id="homepage-area" class="main-content container">
         <div class="booking-form">
             <h3>Booking Flights</h3>
             <div class="input-group">
@@ -104,12 +104,20 @@
                     </div>
                 </div>
             </div>
-            <button class="btn-style">Book Now</button>
+            <button id="booking" class="btn-style">Book Now</button>
         </div>
 
         <div class="booking-content">
             <h1>discover <br> around the world</h1>
             <p>Travel writers have occasionally extolled the virtues of buying air tickets in other countries. Now that the dollar has gained against the euro and pound, the idea has resurfaced. ...</p>
+        </div>
+    </main>
+    <section id="message-area">
+        <h1 style="color:#eb596e"> Thank You! Booking Successful </h1>
+        <div class="under-massege"> 
+            <p>Your booking is confirm</p>
+            <p>Booking Number : A990045</p>
+            <i  style="font-size:70px; color:#09015f;"class="fas fa-check-circle"></i>
         </div>
     </section>
    
@@ -174,6 +182,13 @@
                 const ticketCount = parseInt(ticketInput.value);
                 return ticketCount;
             }
+
+            const bookingBtn = document.getElementById("booking").addEventListener('click', function () {
+            const homepageArea = document.getElementById('homepage-area');
+            homepageArea.style.display = "none";
+            const messageArea = document.getElementById("message-area");
+            messageArea.style.display = "block";
+        })
 
     </script>
 

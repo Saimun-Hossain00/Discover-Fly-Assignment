@@ -132,3 +132,22 @@ a.active {
   display: flex;
   justify-content: space-between;
 }
+#message-area {
+  margin: 100px 400px;
+  color: white;
+  text-align: center;
+  display: none;
+}
+#message-area h1 {
+  background: rgb(25, 0, 83);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 30px;
+}
+.under-massege p {
+  padding: 8px;
+  font-size: 25px;
+  font-weight: 700;
+  font-family: sans-serif;
+  color: #f2eeef;
+}
