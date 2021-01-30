@@ -117,6 +117,17 @@ a.active {
   margin-top: 10px;
 }
 
+.btn-style {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  font-weight: 500;
+  background-color: #3352f2;
+}
+
 .amount {
   display: flex;
   justify-content: space-between;
